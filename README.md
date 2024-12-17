@@ -11,12 +11,13 @@ src/
   main/
     java/
       pages/                  # Page Object classes
-      stepdefinitions/        # Cucumber step definitions
-      teststeps/              # Test assertions
+     
       utils/                  # Utility classes (DriverFactory, ConfigReader, etc.)
   test/
     java/
       runners/                # Cucumber test runners
+    stepdefinitions/        # Cucumber step definitions
+    teststeps/              # Test assertions
 config/
   config.properties           # Centralized configuration
 features/
