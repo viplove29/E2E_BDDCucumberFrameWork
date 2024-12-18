@@ -219,13 +219,46 @@ This framework includes a GitHub Actions workflow for automated testing and repo
 5. Open a pull request.
 
 ---
-
-## **License**
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-## **Contact**
-
-For questions or suggestions, please open an issue or contact the repository owner.
+Dependencies
+1.	Cucumber Dependencies
+o	cucumber-junit-platform-engine:
+Integrates Cucumber with the JUnit 5 platform, allowing you to run Cucumber scenarios as JUnit tests.
+o	cucumber-java:
+Provides support for writing step definitions in Java.
+o	cucumber-junit:
+Enables Cucumber tests to run using JUnit 4 (if not using JUnit 5).
+o	cucumber-testng:
+Allows integration of Cucumber with TestNG for running tests.
+2.	TestNG Dependency
+o	testng:
+A testing framework for running tests in parallel, setting up configurations, and defining groups for tests.
+3.	Selenium Dependency
+o	selenium-java:
+Provides the Selenium WebDriver library for browser automation in Java.
+4.	WebDriverManager Dependency
+o	webdrivermanager:
+Automates the management of browser drivers (e.g., ChromeDriver, GeckoDriver) to avoid manual setup.
+5.	Logging Dependencies
+o	logback-classic:
+A popular implementation of SLF4J for logging, useful for debugging and monitoring.
+o	log4j-slf4j-impl:
+Bridges SLF4J logging to Log4j 2, giving you the flexibility to use Log4j's advanced logging features.
+________________________________________
+Plugins
+1.	Maven Compiler Plugin
+o	maven-compiler-plugin:
+Specifies the Java version for compiling your code (e.g., Java 11 in this configuration).
+2.	Maven Surefire Plugin
+o	maven-surefire-plugin:
+Runs unit and integration tests during the build process. Configured here to use a testng.xml file.
+3.	Spotless Maven Plugin
+o	spotless-maven-plugin:
+Enforces code formatting rules in your project using Google Java Format.
+________________________________________
+Key Use Cases
+•	Cucumber Dependencies: Enable behavior-driven development (BDD) by writing tests in plain English.
+•	TestNG & Maven Surefire: Provide flexibility for managing and running test suites.
+•	Selenium & WebDriverManager: Automate browser testing efficiently without worrying about driver compatibility.
+•	Logging: Helps trace issues and debug during test execution.
+•	Spotless Plugin: Maintains consistent code style across the project.
+# BDD Framework for Selenium and Cucumber
